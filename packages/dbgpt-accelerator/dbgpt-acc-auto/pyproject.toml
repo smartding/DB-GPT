@@ -114,10 +114,10 @@ conflicts = [
     ],
 ]
 
-# [[tool.uv.index]]
-# name = "pytorch-cpu"
-# url = "https://download.pytorch.org/whl/cpu"
-# explicit = true
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
 
 [[tool.uv.index]]
 name = "pytorch-cu118"
@@ -154,7 +154,7 @@ torch = [
     { index = "pytorch-cu121", marker = "platform_system == 'Windows'", extra = "cuda121" },
     { index = "pytorch-cu124", marker = "platform_system == 'Windows'", extra = "cuda124" },
     # Linux support all versions
-    # { index = "pytorch-cpu", marker = "platform_system == 'Linux'", extra = "cpu" },
+    { index = "pytorch-cpu", marker = "platform_system == 'Linux'", extra = "cpu" },
     { index = "pytorch-cu118", marker = "platform_system == 'Linux'", extra = "cuda118" },
     { index = "pytorch-cu121", marker = "platform_system == 'Linux'", extra = "cuda121" },
     { index = "pytorch-cu124", marker = "platform_system == 'Linux'", extra = "cuda124" },
@@ -166,7 +166,7 @@ torchvision = [
     { index = "pytorch-cu118", marker = "platform_system == 'Windows'", extra = "cuda118" },
     { index = "pytorch-cu121", marker = "platform_system == 'Windows'", extra = "cuda121" },
     { index = "pytorch-cu124", marker = "platform_system == 'Windows'", extra = "cuda124" },
-    # { index = "pytorch-cpu", marker = "platform_system == 'Linux'", extra = "cpu" },
+    { index = "pytorch-cpu", marker = "platform_system == 'Linux'", extra = "cpu" },
     { index = "pytorch-cu118", marker = "platform_system == 'Linux'", extra = "cuda118" },
     { index = "pytorch-cu121", marker = "platform_system == 'Linux'", extra = "cuda121" },
     { index = "pytorch-cu124", marker = "platform_system == 'Linux'", extra = "cuda124" },
@@ -178,7 +178,7 @@ torchaudio = [
     { index = "pytorch-cu118", marker = "platform_system == 'Windows'", extra = "cuda118" },
     { index = "pytorch-cu121", marker = "platform_system == 'Windows'", extra = "cuda121" },
     { index = "pytorch-cu124", marker = "platform_system == 'Windows'", extra = "cuda124" },
-    # { index = "pytorch-cpu", marker = "platform_system == 'Linux'", extra = "cpu" },
+    { index = "pytorch-cpu", marker = "platform_system == 'Linux'", extra = "cpu" },
     { index = "pytorch-cu118", marker = "platform_system == 'Linux'", extra = "cuda118" },
     { index = "pytorch-cu121", marker = "platform_system == 'Linux'", extra = "cuda121" },
     { index = "pytorch-cu124", marker = "platform_system == 'Linux'", extra = "cuda124" },
