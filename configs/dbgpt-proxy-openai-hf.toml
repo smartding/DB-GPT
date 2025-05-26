@@ -30,3 +30,9 @@ api_key = "${env:OPENAI_API_KEY}"
 name = "BAAI/bge-large-zh-v1.5"
 provider = "hf"
 path = "/home/smart/.models/bge-large-zh-v1.5"
+
+[[models.rerankers]]
+type = "reranker"
+name = "bge-reranker-v2-m3"
+provider = "hf"
+path = "/home/smart/.models/bge-reranker-v2-m3"
