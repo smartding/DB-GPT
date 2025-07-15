@@ -549,6 +549,7 @@ class ConversableAgent(Role, Agent):
         finally:
             if reply_message:
                 root_span.metadata["reply_message"] = reply_message.to_dict()
+                root_span.metadata["current_retry_counter"] = current_retry_counter
             root_span.end()
 
     async def thinking(
