@@ -55,6 +55,7 @@ dev-dependencies = [
     "jupyter",
     "pre-commit>=4.2.0",
     "mypy>=1.15.0",
+    "gunicorn",
 ]
 
 
